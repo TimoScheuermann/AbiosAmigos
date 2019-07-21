@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Abios Amigos</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#">Abios Amigos</a>
+            <a href="#">Outtakes</a>
+            <a href="#">Film</a>
+            <a href="#">Trailer</a>
+            <a href="#">Behind the Scenes</a>
+            <a href="#">AK Abifilm</a>
+        </div>
+        <div class="header">
+            <div class="preview">
+                <video id="headervideo" autoplay muted loop playsinline>
+                    <source src="files/header.mp4#t=9,45">
+                </video>
+            </div>
+            <div class="info">
+                <h1>Abios Amigos</h1>
+                <p>A Western Comedy</p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="action">
+                <h1>Outtakes</h1>
+                <img src="files/outtakes.jpg">
+                <a href="#">Anschauen</a>
+            </div>
+            <div class="action">
+                <h1>Abios Amigos</h1>
+                <img src="files/movie.jpg">
+                <a href="#">Anschauen</a>
+            </div>
+            <div class="action">
+                <h1>Trailer</h1>
+                <img src="files/trailer.jpg">
+                <a href="#">Anschauen</a>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+var video = document.getElementById("headervideo");
+setInterval(function() {
+    if(video.currentTime > 42) {
+        video.currentTime = 9;
+    }
+},0);
+</script>

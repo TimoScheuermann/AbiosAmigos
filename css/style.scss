@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Montague';
+    src: url('../font/Montague.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #111;
+    font-family: 'Montague';
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.navbar {
+    display: block;
+    position: fixed;
+    width: 80vw;
+    background: rgba(11, 11, 11, 1);
+    height: 5vw;
+    line-height: 5vw;
+    padding: 0vw 10vw;
+    z-index: 100;
+    text-align: right;
+
+    a {
+        color: rgb(221, 241, 105);
+        text-decoration: none;
+        margin: 0 1.25vw;
+        font-size: 2vw;
+        display: inline-block;
+        opacity: .5;
+        &:first-of-type {
+            float: left;
+            opacity: 1;
+        }
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.header {
+    display: block;
+    z-index: 45;
+    text-align: center;
+
+    .preview {
+
+        margin-top: -1.76vw;
+
+        video {
+            width: 100%;
+            filter: brightness(75%);
+        }
+        
+        &:before {
+            content: '';
+            position: absolute;
+            background: transparent url("../files/pattern.png") repeat top left;
+            top: 0;
+            left: 0;
+            z-index: 49;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .info {
+        margin-top: 20vw;
+        letter-spacing: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: inline-block;
+        z-index: 55;
+        color: white;
+        h1, p {
+            font-weight: normal;
+            transform: scale(2);
+        }
+    }
+}
+
+.actions {
+
+    z-index: 50;
+    display: block;
+    text-align: center;
+    background: #fafafa;
+    margin-top: -7vw;
+    position: absolute;
+    width: 100%;
+
+    .action {
+
+        margin: 25px 10px;
+        display: inline-block;
+        width: 300px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px 5px;
+
+        h1 {
+            height: 25px;
+            line-height: 20px;
+            width: 80%;
+            margin: 5px 10%;
+            color: rgba(11,11,11,.9);
+            font-weight: normal;
+        }
+        img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        a {
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 5px 15px;
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: white;
+                background: black;
+            }
+        }
+    }
+}
