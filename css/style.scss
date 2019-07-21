@@ -70,8 +70,7 @@ html, body {
         }
     }
     .info {
-        margin-top: 20vw;
-        letter-spacing: 15px;
+        margin-top: 19vw;
         position: absolute;
         top: 0;
         left: 0;
@@ -80,8 +79,13 @@ html, body {
         z-index: 55;
         color: white;
         h1, p {
+            letter-spacing: 2vw;
             font-weight: normal;
-            transform: scale(2);
+            font-size: 2.5vw;
+            line-height: 1vw;
+        }
+        h1 {
+            font-size: 5vw;
         }
     }
 }
